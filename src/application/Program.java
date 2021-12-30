@@ -41,7 +41,7 @@ public class Program {
 				line = br.readLine();
 			}
 			
-			try(BufferedWriter bw = new BufferedWriter(new FileWriter(pathOut,))){
+			try(BufferedWriter bw = new BufferedWriter(new FileWriter(pathOut))){
 				for(Item i : list) {
 					bw.write(i.getName() + "," + String.format("%.2f", i.totalValue()));
 					bw.newLine();
